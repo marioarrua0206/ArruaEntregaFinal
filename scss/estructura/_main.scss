@@ -1,3 +1,546 @@
 main {
-    height:80vh;
+    height: 100vh;
 }
+
+// -------------------------------------------------------
+
+
+/* ************ Estilos main index *************** */
+.wrap {
+  width: 100vw;
+  height: 70vh;
+  color: #363947;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/desig.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrap2 {
+  width: 100vw;
+  height: 70vh;
+  color: #363947;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/bblog.webp);
+  background-size: cover;
+  background-position: center;
+}
+.wrap3 {
+  width: 100vw;
+  height: 70vh;
+  color: #363947;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../imagenes/personal\ copia.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 20%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+#wrap {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+.texto-w {
+  /* background: #000; */
+  width: 100vw;
+  height: 100vh;
+  font-weight: bold;
+  font-size: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.texto-w > div {
+  animation: come2life linear 10s infinite;
+  transform-origin: center center;
+  opacity: 0;
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.texto-w > div:nth-child(1) {
+  left: 30vw;
+  top: 30vh;
+  animation-delay: 0s;
+}
+
+.texto-w > div:nth-child(2) {
+  left: 70vw;
+  top: 30vh;
+  animation-delay: 4s;
+}
+
+.texto-w > div:nth-child(3) {
+  left: 50vw;
+  top: 50vh;
+  animation-delay: 8s;
+}
+
+.texto-w > div:nth-child(4) {
+  left: 30vw;
+  top: 70vh;
+  animation-delay: 6s;
+}
+
+.texto-w > div:nth-child(5) {
+  left: 70vw;
+  top: 70vh;
+  animation-delay: 2s;
+}
+
+@keyframes come2life {
+  0% {
+    transform: scale3d(0, 0, 1) rotate(0.02deg);
+    opacity: 0;
+    filter: blur(10px);
+  }
+  25% {
+    transform: scale3d(1, 1, 1) rotate(0.02deg);
+    opacity: 1;
+    filter: blur(0px);
+  }
+  40% {
+    opacity: 1;
+    filter: blur(0px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    transform: scale3d(4, 4, 1) rotate(0.02deg);
+    filter: blur(10px);
+  }
+}
+.wrap-txt {
+  padding: 50px 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  background-color: rgb(255, 149, 10);
+}
+
+.cont-text {
+  width: 70%;
+  margin-left: 15%;
+  animation: 2s anim-lineUp ease-out forwards;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.wrap-txt2 {
+  padding: 50px 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  background-color: #e4a42d;
+}
+
+.wrap-txt3 {
+  padding: 50px 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  background-color: #ff7f16;
+}
+
+
+
+
+
+
+/* **********Estilos main Clientes********* */
+
+#mainclientes {
+    width: 100%;
+    height: 80vh;
+    background-color: #ffffff;
+}
+
+.contenedor-cli {
+    margin: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    grid-template-areas:
+        "card1 card2 card3"
+        "card4 card5 card6";
+}
+
+#card1 {
+    grid-area: card1;
+}
+
+#card2 {
+    grid-area: card2;
+}
+
+#card3 {
+    grid-area: card3;
+}
+
+#card4 {
+    grid-area: card4;
+}
+
+#card5 {
+    grid-area: card5;
+}
+
+#card6 {
+    grid-area: card6;
+}
+
+.tarjeta {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-bottom: 1px solid #afafaf;
+    text-align: center;
+    align-items: center;
+
+}
+
+// -------------------------------------------------------
+
+
+/* **************Estilos main Servicios*************** */
+
+#mainservicios {
+    width: 100%;
+    height: 82%;
+    background-color: #ffffff;
+    
+
+}
+
+.contenedorserv {
+    background-color: #ffffff;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px 48px;
+    grid-template-areas: "card1s card2s card3s" "card4s card5s card6s";
+}
+
+#card1s {
+    grid-area: card1s;
+}
+
+#card2s {
+    grid-area: card2s;
+}
+
+#card3s {
+    grid-area: card3s;
+}
+
+#card4s {
+    grid-area: card4s;
+
+}
+
+#card5s {
+    grid-area: card5s;
+}
+
+#card6s {
+    grid-area: card6s;
+}
+
+
+.tarjeta {
+    width: 100%;
+    height: 1fr;
+    background-color: #ffffff;
+    border-bottom: 1px solid #afafaf;
+    text-align: center;
+    align-items: top;
+    margin-bottom: 16px;
+
+
+}
+
+// -------------------------------------------------------
+
+
+
+/* ***************Estilos main Nosotros******************** */
+
+#mainnosotros {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    background-color: #ffffff;
+
+
+}
+
+#img {
+    height: 10%;
+}
+
+.container-e {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.container-p {
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    
+    font-size: 1.2rem;
+    font-weight: 400px;
+    color: #2e2e2e;
+    text-overflow: ellipsis;
+}
+
+// -------------------------------------------------------
+
+
+
+
+/* ******************Estilos main Contacto************ */
+
+#maincontacto {
+    background-color: #acbedd;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 0.75fr 4fr 3fr 0.75fr;
+    grid-template-rows: 0.25fr 2fr 0.25fr;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-areas: "Sect1c Sect1c Sect1c Sect1c" "Sect2c Sect3c Sect4c Sect5c" "Sect6c Sect6c Sect6c Sect6c";
+}
+
+.botones-st {
+
+    width: 150px;
+    border: 2px #6ea3ff;
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+    border-radius: 8px;
+    background-color: #4573c4;
+    font-size: 1rem;
+    padding: 6px 6px 6px 0px;
+    list-style-type: none;
+    transition: 0.8s ease-in-out;
+}
+
+#sect1c {
+    grid-area: Sect1c;
+}
+
+#sect2c {
+    grid-area: Sect2c;
+}
+
+#sect3c {
+    background-color: rgb(199, 224, 247);
+    grid-area: Sect3c;
+    padding: 1rem;
+}
+
+#sect4c {
+    background-color: rgb(199, 224, 247);
+    grid-area: Sect4c;
+    padding: 1rem;
+    background-image: url("../imagenes/mapa\ copia.webp");
+
+}
+
+#titulo {
+    background-color: #e4eeff;
+    padding: 8px;
+
+}
+
+#sect5c {
+    grid-area: Sect5;
+
+
+}
+
+#sect6c {
+    grid-area: Sect6;
+
+}
+
+
+
+// -------------------------------------------------------
+
+
+
+
+/* *****************Estilos main 404******************* */
+
+#main404 {
+    height: 80vh;
+    width: auto;
+    background-image: url("../imagenes/404_copia.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 992px) {
+
+
+    .contenedor-cli {
+        margin: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6";
+
+
+    }
+
+    .contenedorserv {
+        margin: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        grid-template-areas:
+            "card1s card2s"
+            "card3s card4s"
+            "card5s card6s";
+
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+   
+
+
+    .contenedor-cli {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2px;
+        row-gap: 32px;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6";
+    }
+    #maincontacto {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 5fr 4fr 0.10fr;
+        column-gap: 2px;
+        row-gap: 32px;
+        grid-template-areas:
+            "Sect1c"
+            "Sect3c"
+            "Sect4c"
+            "Sect6c";
+    }
+
+    #sect5c {
+        display: none;
+    }
+
+    .contenedorserv {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 2px;
+        row-gap: 32px;
+        grid-template-areas:
+            "card1s"
+            "card2s"
+            "card3s"
+            "card4s"
+            "card5s"
+            "card6s";
+    }
+
+}
+
+
+
+

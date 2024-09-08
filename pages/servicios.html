@@ -15,34 +15,50 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style-internas_serv.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>+45 SERVICIOS </title>
 </head>
 
 <body>
-
     <!-- header -->
 
-    <header class="container-fluid align-content-center p-0">
-        <div id="hd" class="row bg-white container-fluid m-0">
-            <div class="col-sm-5 col-md-5 col-lg-2 col-xl-2 d-flex justify-content-center bg-white h-auto p-0"><img
-                    src="../imagenes/logo_+45.jpg" class="img-fluid" alt="LOGO">
-            </div>
 
-            <div id="slogan"
-                class="col-sm-7 col-md-4 col-lg-3 col-xl-3 d-flex justify-content-center align-content-center flex-wrap">
+    <div>
+        <button class="col-sm-3 col-md-3  col-lg-3 col-xl-3 btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menú</button>
+
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasRightLabel">Menú</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <nav class="column">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./clientes.html">Clientes</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <header class="container-fluid align-content-center p-0" style="display: flex; background-color: white; ">
+
+        <nav class="navbar p-0" style="height: 100%;background-color: white;">
+            <div class="container-fluid" style="background-color: white;">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/45.svg" alt="Logo" width="250" height="100"
+                        class="d-inline-block align-text-center">
+                </a>
                 <h1>tu sitio en 5 minutos</h1>
             </div>
-            <nav
-                class="col-sm-12 col-md-12 col-lg-7 col-xl-6 d-flex justify-content-center align-content-center flex-wrap p-0">
-                <ul class="d-flex justify-content-end bg-white m-0 p-0">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/servicios.html">Servicios</a></li>
-                    <li><a href="../pages/clientes.html">Clientes</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        </nav>
         </div>
 
     </header>
@@ -50,49 +66,54 @@
     <!-- Titulo de la sección -->
 
     <div id="tit-seccion" class="container-fluid text-center h-15vh">
-        <h2 class="tit-seccion">Servicios</h2>
+        <h3 class="tit-seccion">Servicios</h3>
     </div>
 
 
     <!-- Main -->
 
 
-    <main>
+    <main id="mainservicios" class="background-color" >
 
-        <div class="contenedor">
+        <div class="contenedorserv">
 
 
-            <div id="card1" class="tarjeta">
+            <div id="card1s" class="tarjeta">
                 <img src="../imagenes/serv_01.svg" class="mt-1" alt="marca" height="300px">
-                <h3 class="mt-2">Páginas personalizadas</h3>
-                <p class="mt-3">Incluimos un constructor de sitios web para que la creación de tu sitio sea rápida, fácil y tenga un aspecto profesional.</p>
+                <h3 class="m-0">Web personalizada</h3>
+                <p class="mt-3">Incluimos un constructor de sitios web para que la creación de tu sitio sea rápida,
+                    fácil y tenga un aspecto profesional.</p>
             </div>
-            <div id="card2" class="tarjeta">
+            <div id="card2s" class="tarjeta">
                 <img src="../imagenes/serv_02.svg" class="mt-1" alt="www" height="300px">
-                <h3 class="mt-2">Hosting ilimitado</h3>
+                <h3 class="m-0">Hosting ilimitado</h3>
                 <p class="mt-3"> Alojá tus sitios en Uruguay para tiempos de carga más rápidos.</p>
             </div>
-            <div id="card3" class="tarjeta mb-2">
-                <img src="../imagenes/serv_03.svg" class="mb-2" alt="ecom" height="300px">
-                <h3 class="mb-2">E-commerece</h3>
-                <p class="mb-3"> Liberamos todo el potencial de ventas de tu empresa a través de la mejor plataforma. ¡dale e-commerce a tu negocio!</p>
+            <div id="card3s" class="tarjeta">
+                <img src="../imagenes/serv_03.svg" class="mt-1" alt="ecom"  height="300px">
+                <h3 class="m-0">E-commerece</h3>
+                <p class="mt-3"> Liberamos todo el potencial de ventas de tu empresa a través de la mejor plataforma.
+                    </p>
             </div>
 
-            <div id="card4" class="tarjeta mt-3">
+            <div id="card4s" class="tarjeta">
                 <img src="../imagenes/serv_04.svg" class="mt-1" alt="db" height="300px">
-                <h3 class="mt-2">Bases de datos</h3>
-                <p class="mt-3">Tus datos se encuentran dentro del territorio Uruguayo cumpliendo con la Ley 18331 de Uruguay referente a protección de datos.</p>
+                <h3 class="m-0">Bases de datos</h3>
+                <p class="mt-3">Tus datos se encuentran dentro del territorio Uruguayo cumpliendo con la Ley 18331 de
+                    Uruguay referente a protección de datos.</p>
 
             </div>
-            <div id="card5" class="tarjeta ">
+            <div id="card5s" class="tarjeta">
                 <img src="../imagenes/serv_05.svg" class="mt-1" alt="SS" height="300px">
-                <h3 class="mt-2">Solucción a problemas</h3>
-                <p class="mt-3"> El servicio incluye también soporte directo con los usuarios, soporte remoto, técnicos on-site, mantenimiento preventivo y servicio de consultoría.</p>
+                <h3 class="m-0">Solucción a problemas</h3>
+                <p class="mt-3"> El servicio incluye también soporte directo con los usuarios, soporte remoto, técnicos
+                    on-site, mantenimiento preventivo y servicio de consultoría.</p>
             </div>
-            <div id="card6" class="tarjeta mt-3">
+            <div id="card6s" class="tarjeta">
                 <img src="../imagenes/serv_06.svg" class="mt-1" alt="SSL" height="300px">
-                <h3 class="mt-2">Seguridad certificada</h3>
-                <p class="mt-3"> Incluimos planes con SSL instalados automáticamente para que la información sensible de tus clientes y las transacciones de comercio electrónico estén protegidas. </p>
+                <h3 class="m-0">Seguridad certificada</h3>
+                <p class="mt-3"> Incluimos planes con SSL instalados automáticamente para que la información sensible de
+                    tus clientes y las transacciones de comercio electrónico estén protegidas. </p>
             </div>
 
 
@@ -113,7 +134,7 @@
                 </div>
 
                 <section class="col-sm-4 col-md-5 col-lg-5 d-flex justify-content-center bg-white">
-                    <h3>Realizado en equipo por +45</h3>
+                    <h4>Realizado en equipo por +45</h4>
 
                 </section>
 
@@ -125,6 +146,19 @@
 
 
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
 
 
 
